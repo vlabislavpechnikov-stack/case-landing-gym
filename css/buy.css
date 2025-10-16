@@ -1,0 +1,281 @@
+        @font-face {
+            font-family: 'Bruno Ace SC';
+            src: url(/font/BrunoAceSC-Regular.ttf) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Mont';
+            src: url(/font/Montserrat-Regular.ttf);
+        }
+        @font-face {
+            font-family: 'Mont1';
+            src: url(/font/Montserrat-ExtraLight.ttf);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(/img/Untitled.png);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            font-family: 'Mont', sans-serif;
+        }
+
+        /* Header Styles */
+        .fix {
+            width: 100%;
+            background-color: black;
+            box-shadow: 0px 1px 10px 5px rgb(133, 4, 150);
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header {
+            font-family: 'Mont1', sans-serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #000000;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-family: 'Bruno Ace SC', sans-serif;
+            font-size: 24px;
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .header nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .header nav a {
+            color: #ffffff;
+            text-decoration: none;
+            background-color: rgb(255, 255, 255);
+            color: #000000;
+            padding: 8px 15px;
+            font-size: 10px;
+            font-weight: 600;
+            border: none;
+            border-radius: 32px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .header nav a:hover {
+            background: rgb(133, 4, 150);
+            box-shadow: 0px 1px 10px 5px #550147;
+            color: #ffffff;
+        }
+
+        /* Main Content */
+        main {
+            padding: 120px 20px 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .popup-content {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-family: 'Mont';
+            border-bottom: 1px solid #ccc;
+            font-size: 32px;
+            font-weight: 300;
+            margin: 0 0 30px 0;
+            padding: 0 0 15px 0;
+            color: #333;
+        }
+
+        /* Form Styles */
+        form {
+            width: 100%;
+        }
+
+        form section {
+            margin: 0 0 25px 0;
+            text-align: left;
+        }
+
+        label {
+            font-family: 'Mont';
+            display: block;
+            font-size: 16px;
+            font-weight: 400;
+            margin: 0 0 8px 0;
+            color: #333;
+        }
+
+        input {
+            border: 1px solid #ccc;
+            font-size: 16px;
+            padding: 12px 15px;
+            width: 100%;
+            border-radius: 5px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: rgb(133, 4, 150);
+            box-shadow: 0 0 5px rgba(133, 4, 150, 0.3);
+        }
+
+        input:not(:focus):invalid {
+            color: red;
+            border-color: red;
+        }
+
+        section#cc-exp-csc {
+            display: flex;
+            gap: 15px;
+        }
+
+        section#cc-exp-csc div {
+            flex: 1;
+        }
+
+        .explanation {
+            font-size: 12px;
+            margin: 5px 0 0 0;
+            font-family: 'Mont';
+            color: #666;
+        }
+
+        /* Button */
+        .button {
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            padding: 15px 40px;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            border-radius: 32px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .button:not(:disabled):hover {
+            background: rgb(133, 4, 150);
+            box-shadow: 0px 0.5px 5px 2.5px #550147;
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header {
+                padding: 15px;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .header nav {
+                justify-content: center;
+            }
+
+            .header nav a {
+                padding: 8px 12px;
+                font-size: 9px;
+            }
+
+            main {
+                padding: 140px 15px 30px;
+            }
+
+            .popup-content {
+                padding: 25px 20px;
+            }
+
+            h1 {
+                font-size: 28px;
+                margin: 0 0 25px 0;
+            }
+
+            section#cc-exp-csc {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                padding: 10px;
+            }
+
+            .logo {
+                font-size: 20px;
+            }
+
+            .header nav a {
+                padding: 6px 10px;
+                font-size: 8px;
+            }
+
+            main {
+                padding: 120px 10px 20px;
+            }
+
+            .popup-content {
+                padding: 20px 15px;
+            }
+
+            h1 {
+                font-size: 24px;
+                margin: 0 0 20px 0;
+            }
+
+            input {
+                padding: 10px 12px;
+                font-size: 14px;
+            }
+
+            .button {
+                padding: 12px 30px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .header nav {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+
+            .header nav a {
+                width: 100%;
+                margin: 2px 0;
+            }
+        }
