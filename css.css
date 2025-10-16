@@ -1,116 +1,304 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@font-face {
+    font-family: 'Bruno Ace SC';
+    src: url(/font/BrunoAceSC-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
-
+@font-face {
+    font-family: 'Mont';
+    src: url(/font/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: 'Mont1';
+    src: url(/font/Montserrat-ExtraLight.ttf);
+}
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    color: white;
-    background-color: black;
+    background-color: #000;
+    color: #fff;
 }
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-header {
-    background-color: black;
-    color: white;
-    padding: 20px 0;
-}
-
-
-header nav ul {
-    margin-bottom: 10px;
-    list-style: none;
+.header {
+    font-family: 'Mont1', sans-serif;
     display: flex;
-    justify-content: right;
-
-}
-
-header nav ul li {
-    margin: 0 15px;
-    margin-top: 30px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-.hero {
-    background-color: black;
-    text-align: center;
-    padding: 100px 0;
-}
-
-.hero h2 {
-    font-size: 48px;
-    margin-bottom: 30px;
-}
-
-.hero button {
-    background-color: #ffd700;
-    color: black;
-    border: none;
-    padding: 15px 30px;
-    font-size: 18px;
-    cursor: pointer;
-}
-
-.reasons {
-    background-color: black;
-    padding: 50px 0;
-}
-
-.reasons h2 {
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.reason {
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #000;
 }
-
-.reason img {
-    width: 50px;
-    height: 50px;
+.header a {
+    color: #ffffff;
+    text-decoration: none;
     margin-right: 20px;
 }
-
-.reason h3 {
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+.hero-text {
+    padding: 0 50px;
+}
+.hero-text h1 {
+    font-family: 'Mont';
+    font-size: 56px;
+    margin-bottom: 20px;
+    margin-left: 275px;
+}
+.hero-text button{
+    background-color: rgb(133, 4, 150);
+    color: #fff;
+    padding: 16px 48px;
     font-size: 24px;
-    margin-bottom: 10px;
+    font-weight: 600;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    margin-left: 275px;
 }
-
-.reason p {
-    font-size: 18px;
+.hero-text button:hover {
+    background: #fff;
+    box-shadow: 0px 2px 20px 10px #97B1BF;
+    color: #000;
 }
-
-footer {
+.hero-image {
+    width: 50%;
+    height: 100%;
+    background-image: url(/img/141.png); 
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%); 
+}
+/*Test block2*/
+.h-section {
+    max-width: 1350px;
+    margin: 0 auto;
     background-color: black;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    margin-left: 275px;
+}
+.h-text1{
+    font-size: 40px;
+    position: relative;
+left: 310px;
+}   
+.h-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 300px;
+
+}     
+.h-item {
+    text-align: left;
+    padding: 20px 13px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+
+}
+.h-item:hover {
+    transform: translateY(-5px);
+}
+.h-number {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 15px;
+}        
+.h-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}       
+.h-description {
+    font-size: 14px;
+    color: #c9c9c9;
+    line-height: 1.5;
+    font-family: 'Mont1';
 }
 
 
-
-.one {
-    background-image: url(/img/1.png);
-background-color: black;
-width: auto;
-height: 1300px;
-
-
+.h-1 {
+width: 1200px;
 }
+
+  .bb {
+            background: black;
+            color: #333;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            color: white;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .passes-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .pass-card {
+            background: rgb(255, 255, 255);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .pass-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        background: #fff;
+    box-shadow: 0px 2px 20px 10px #850496;
+    color: #000;
+        }
+        
+        .pass-header {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .pass-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        
+        .pass-price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin: 15px 0;
+        }
+        
+        .pass-price::before {
+            content: '$';
+            font-size: 1.5rem;
+            vertical-align: super;
+        }
+        
+        .pass-features {
+            padding: 25px;
+            list-style: none;
+        }
+        
+        .pass-features li {
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+            position: relative;
+            padding-left: 35px;
+        }
+        
+        .pass-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .pass-features li::before {
+            content: '✓';
+            color: #000000;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+        
+        .divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #8E2DE2, transparent);
+            margin: 20px 0;
+        }
+        
+        .buy-section {
+            text-align: center;
+            padding: 30px 0;
+        }
+        
+        .buy-button {
+            background: linear-gradient(to right, #4A00E0, #8E2DE2);
+            color: white;
+            border: none;
+            padding: 18px 50px;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 700;
+            box-shadow: 0 5px 15px rgba(142, 45, 226, 0.4);
+        }
+        
+        .buy-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(142, 45, 226, 0.6);
+        }
+        
+        .highlight {
+            background: linear-gradient(to right, #FF512F, #F09819);
+        }
+        
+        .highlight .pass-header {
+            background: linear-gradient(to right, #FF512F, #F09819);
+        }
+        
+        @media (max-width: 768px) {
+            .passes-container {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+
+
+
+        .but {
+    
+    position: relative;
+    left: 125px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 16px 48px;
+    font-size: 24px;
+    font-weight: 600;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+   text-align: center;
+}
+
+
+.but:hover{
+
+    background: rgb(133, 4, 150);
+    box-shadow: 0px 2px 20px 10px #979797;
+    color: #000;
+}
+       
