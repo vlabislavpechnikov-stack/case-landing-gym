@@ -4,72 +4,188 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness Website</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #000;
-            color: #fff;
-        }
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background-color: #000;
-        }
-        .header a {
-            color: #fff;
-            text-decoration: none;
-            margin-right: 20px;
-        }
-        .hero {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 100vh;
-            background-color: #000;
-        }
-        .hero-text {
-            padding: 0 50px;
-        }
-        .hero-text h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-        .hero-text button {
-            background-color: #ffd700;
-            color: #000;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .hero-image {
-            width: 50%;
-            height: 100%;
-            background-image: url('/img/1.png'); /* Замените на реальный URL изображения */
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
+<link rel="stylesheet" href="css.css">
 </head>
 <body>
     <div class="header">
-        <div>FITNESS</div>
-        <div>
+        <div style="margin-left:200px; font-size: 32px; font-family: 'Bruno Ace SC', sans-serif;">FITNESS</div>
+        <div style="margin-right: 200px;">
             <a href="#">Affiliates</a>
             <a href="#">Membership</a>
             <a href="#">About</a>
             <a href="#">Trainers</a>
         </div>
     </div>
+
+
     <div class="hero">
         <div class="hero-text">
             <h1>Free trial session with a trainer</h1>
-            <button>Detailed</button>
+            <h1>About us</h1>
+            <br>
+            <br>
+            <button>DETAILED</button>
         </div>
         <div class="hero-image"></div>
     </div>
+
+
+
+<div> 
+    <h2 class="h-text1" style="font-family: mont;">Reasons to join</h2>
+
+
+    <div style="display: flex; justify-self: center;">
+        <div class="h-1">
+           
+            <div class="h-grid">
+                <div class="h-item">
+                <img src="/img/icon_line (1).png" alt="" style="position: relative; top: 60px; right: 60px;">
+                <div class="h-number">15000 sq.m. </div>
+
+                <p class="h-description">A spacious gym for sports – a safe distance between exercise machines.</p>
+            </div>
+            
+            <div class="h-item" style="position: relative; bottom: 35px;">
+                <img src="/img/icon_ eqipment (2).png" alt="" style="position: relative ; top: 90px; right: 80px;">
+                <div class="h-number" style="position: relative; top: 8px;">More than 200 equipment</div>
+
+                <p class="h-description">No queues at the simulators. Premium equipment from LifeStyle, Hammer Strength, TechnoGym.</p>
+            </div> 
+       </div>
+
+       <div class="h-grid">
+        <div class="h-item">
+            <img src="/img/icon_ fitness zones (2).png" alt="" class="logo" style="position: relative ; top: 60px; right: 70px;">
+                <div class="h-number">4 fitness zones</div>
+                <h3 class="h-title"></h3>
+                <p class="h-description">From cardio to functional and cycle. Separate area for boxing and mixed martial arts.</p>
+        </div>
+
+        <div class="h-item">
+            <img src="/img/icon_time (1).png" alt="" class="logo" style="position: relative ; top: 70px; right: 80px;">
+                <div class="h-number">Round-the-clock operation</div>
+                <h3 class="h-title"></h3>
+                <p class="h-description">The gym is open 24 hours a day, also works on all holidays and weekends.</p>
+        </div>
+    </section>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div>
+<div class="bb">
+    <div class="container">
+        <header>
+            <h1>Фитнес Пакеты</h1>
+            <p class="subtitle">Выберите подходящий план для достижения ваших целей</p>
+        </header>
+        
+        <div class="passes-container">
+            <!-- Pass 'Trial' -->
+            <div class="pass-card">
+                <div class="pass-header">
+                    <div class="pass-name">Pass 'Trial'</div>
+                    <div class="pass-price">0</div>
+                </div>
+                <ul class="pass-features">
+                    <li>Access to the gym from BX3 to Nx20</li>
+                    <li>The trainer on duty will introduce you to the gym</li>
+                </ul>
+
+                <button class="but" style="position: relative; top: 45px;"><a href="" style="text-decoration: none; color: rgb(255, 255, 255); ">Buy</a></button>
+            </div>
+            
+            
+            <!-- Pass 'Easy Start' -->
+            <div class="pass-card">
+                <div class="pass-header">
+                    <div class="pass-name">Pass 'Easy Start'</div>
+                    <div class="pass-price">119</div>
+                </div>
+                <ul class="pass-features">
+                    <li>Visit without restrictions 24/7</li>
+                    <li>Individual training program</li>
+                    <li>Access to the VTRAINER application</li>
+                    <li>Trainer support</li>
+                </ul>
+                 <button class="but" style="position: relative; bottom: 20px;"><a href="" style="text-decoration: none; color: rgb(255, 255, 255); ">Buy</a></button>
+            </div>
+            
+            <!-- Pass 'Free Time' -->
+            <div class="pass-card">
+                <div class="pass-header">
+                    <div class="pass-name">Pass 'Free Time'</div>
+                    <div class="pass-price">49</div>
+                </div>
+                <ul class="pass-features">
+                    <li>The entrance time to the gym is from Nx20 to Nx30</li>
+                    <li>Without suspension of gym membership</li>
+                    <li>The trainer on duty will introduce you to the gym</li>
+                </ul>
+                <button class="but" style="position: relative; bottom: 20px;"><a href="" style="text-decoration: none; color: rgb(255, 255, 255); ">Buy</a></button>
+            </div>
+            
+            <!-- Pass 'I Month 24/7' -->
+            <div class="pass-card">
+                <div class="pass-header">
+                    <div class="pass-name">Pass 'I Month 24/7'</div>
+                    <div class="pass-price">85</div>
+                </div>
+                <ul class="pass-features">
+                    <li>Visit without restrictions 24/7</li>
+                    <li>The trainer on duty will introduce you to the gym</li>
+                </ul>
+                <button class="but" style="position: relative; top: 70px;"><a href="" style="text-decoration: none; color: rgb(255, 255, 255); ">Buy</a></button>
+            </div>
+            
+            <!-- Pass 'In Shape (AM)' -->
+            <div class="pass-card">
+                <div class="pass-header">
+                    <div class="pass-name">Pass 'In Shape (AM)'</div>
+                    <div class="pass-price">165</div>
+                </div>
+                <ul class="pass-features">
+                    <li>Training in mini-group until Nx10</li>
+                    <li>Without suspension of gym membership</li>
+                    <li>Classes with a trainer in a mini-group 3 times a week</li>
+                    <li>Trainer support</li>
+                </ul>
+                <button class="but" style="position: relative; bottom: 20px;"><a href="" style="text-decoration: none; color: rgb(255, 255, 255); ">Buy</a></button>
+            </div>
+            
+            <!-- Pass 'In Shape (PM)' -->
+            <div class="pass-card">
+                <div class="pass-header">
+                    <div class="pass-name">Pass 'In Shape (PM)'</div>
+                    <div class="pass-price">195</div>
+                </div>
+                <ul class="pass-features">
+                    <li>Training in mini-group until TX00</li>
+                    <li>Without suspension of gym membership</li>
+                    <li>Classes with a trainer in a mini-group 3 times a week</li>
+                    <li>Trainer support</li>
+                </ul>
+                <button class="but" style="position: relative; bottom: 20px;"><a href="" style="text-decoration: none; color: rgb(255, 255, 255); ">Buy</a></button>
+            </div>
+        </div>
+        
+        
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
