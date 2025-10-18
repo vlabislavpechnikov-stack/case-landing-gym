@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FITNESS</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="/css/css.css">
 </head>
-<body>
+
+
 <body id="begin">
     <div class="fix">
         <div class="header">
@@ -22,46 +26,74 @@
         </div>
     </div>
 
-    <div class="hero">
-        <div class="hero-text">
-            <h1>Free trial session with a trainer</h1>
-            <h1>About us</h1>
-            <br>
-            <br>
-            <button>DETAILED</button>
-        </div>
-        <img src="img/141.png" alt="Fitness" class="hero-image">
+<div class="hero">
+    <div class="hero-text">
+        <h1>Free trial session with a trainer</h1>
+        <h1>About us</h1>
+        <br>
+        <br>
+        <button>DETAILED</button>
     </div>
-
-    <div id="Affiliates" class="affiliates-section"> 
-        <h2 class="h-text1">Reasons to join</h2>
-
-        <div class="h-grid">
-            <div class="h-item">
-                <img src="img/icon_line (1).png" alt="Space" style="width: 50px; " >
-                <div class="h-number">15000 sq.m.</div>
-                <p class="h-description">A spacious gym for sports – a safe distance between exercise machines.</p>
-            </div>
-            
-            <div class="h-item">
-                <img src="img/icon_ eqipment (2).png" alt="Equipment" style="width: 50px; " >
-                <div class="h-number">More than 200 equipment</div>
-                <p class="h-description">No queues at the simulators. Premium equipment from LifeStyle, Hammer Strength, TechnoGym.</p>
-            </div> 
-
-            <div class="h-item">
-                <img src="img/icon_ fitness zones (2).png" alt="Fitness Zones" style="width: 50px; ">
-                <div class="h-number">4 fitness zones</div>
-                <p class="h-description">From cardio to functional and cycle. Separate area for boxing and mixed martial arts.</p>
-            </div>
-
-            <div class="h-item">
-                <img src="img/icon_time (1).png" alt="Time" style="width: 50px; ">
-                <div class="h-number">Round-the-clock operation</div>
-                <p class="h-description">The gym is open 24 hours a day, also works on all holidays and weekends.</p>
-            </div>
+    <!-- Контейнер для слайдера -->
+    <div class="benefits-slider">
+        <div class="slide">
+            <div class="icon">💪</div> <!-- Можно заменить на SVG-иконки -->
+            <h3>Personalized Program</h3>
+            <p>A plan tailored specifically to your body and goals.</p>
+        </div>
+        <div class="slide">
+            <div class="icon">🎯</div>
+            <h3>Fast Results</h3>
+            <p>Train effectively and see progress from the first weeks.</p>
+        </div>
+        <div class="slide">
+            <div class="icon">🤝</div>
+            <h3>Professional Support</h3>
+            <p>Your trainer will guide and motivate you at every step.</p>
         </div>
     </div>
+</div>
+
+    <section class="fitnes-section" id="Affiliates">
+        <div class="container container-custom">
+            <h2 class="text-center mb-5">Reasons to join</h2>
+            <div class="row justify-content-center">
+                <!-- Элементы навыков с новыми надписями -->
+                <div class="col-lg-3 col-md-4 col-6 mb-4">
+                    <div class="fitnes-item">
+                        <div class="fitnes-icon">
+                            <img src="img/icon_ eqipment (2).png">
+                        </div>
+                        <h5>Large range of inventory</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 mb-4">
+                    <div class="fitnes-item">
+                        <div class="fitnes-icon">
+                           <img src="img/icon_time (1).png" alt="">
+                        </div>
+                        <h5>Open from 10 a.m. to 11 p.m.</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 mb-4">
+                    <div class="fitnes-item">
+                        <div class="fitnes-icon">
+                            <img src="img/icon_line (1).png" alt="">
+                        </div>
+                        <h5>A large and functional hall</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 mb-4">
+                    <div class="fitnes-item">
+                        <div class="fitnes-icon">
+                            <img src="img/parking.png" alt="">
+                        </div>
+                        <h5>Free and large parking</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <div class="membership-section">
         <header>
@@ -470,7 +502,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-</body>
+
 
 
 
