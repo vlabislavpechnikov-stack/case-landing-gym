@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Веб-Разработчика</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Стили для блока навыков */
+                @font-face {
+            font-family: 'Bruno Ace SC';
+            src: url(/font/BrunoAceSC-Regular.ttf) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Mont';
+            src: url(/font/Montserrat-Regular.ttf);
+        }
+        @font-face {
+            font-family: 'Mont1';
+            src: url(/font/Montserrat-ExtraLight.ttf);
+        }
+        
+        .skills-section {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+
+        .skill-item {
+            font-family: 'Mont';
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .skill-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #667eea;
+        }
+
+        .skill-item img {
+            max-width: 60px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <section class="skills-section">
+        <div class="container container-custom">
+            <h2 class="text-center mb-5">Reasons to join</h2>
+            <div class="row justify-content-center">
+                <!-- Элементы навыков с новыми надписями -->
+                <div class="col-lg-3 col-md-4 col-6 mb-4">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="img/icon_ eqipment (2).png" alt="Large range of inventory">
+                        </div>
+                        <h5>Large range of inventory</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 mb-4">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                           <img src="img/icon_time (1).png" alt="">
+                        </div>
+                        <h5>Open from 10 a.m. to 11 p.m.</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 mb-4">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="img/icon_line (1).png" alt="">
+                        </div>
+                        <h5>A large and functional hall</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 mb-4">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <img src="img/parking.png" alt="">
+                        </div>
+                        <h5>Free and large parking</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
