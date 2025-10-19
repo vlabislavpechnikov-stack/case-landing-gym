@@ -30,7 +30,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Градиентный фон */
+/* Базовые стили для body::before */
 body::before {
     content: '';
     position: fixed;
@@ -49,14 +49,134 @@ body::before {
     animation: glowShift 15s ease-in-out infinite alternate;
 }
 
-@keyframes glowShift {
+/* Планшеты (768px - 1024px) */
+@media (max-width: 1024px) {
+    body::before {
+        background: 
+            radial-gradient(ellipse at 15% 15%, rgba(133, 4, 150, 0.12) 0%, transparent 45%),
+            radial-gradient(ellipse at 85% 85%, rgba(158, 40, 173, 0.1) 0%, transparent 45%),
+            radial-gradient(ellipse at 35% 65%, rgba(112, 3, 126, 0.08) 0%, transparent 45%),
+            radial-gradient(ellipse at 65% 25%, rgba(148, 25, 163, 0.06) 0%, transparent 45%),
+            radial-gradient(ellipse at 5% 85%, rgba(168, 60, 183, 0.05) 0%, transparent 45%);
+        animation: glowShiftTablet 12s ease-in-out infinite alternate;
+    }
+}
+
+/* Мобильные устройства (480px - 767px) */
+@media (max-width: 767px) {
+    body::before {
+        background: 
+            radial-gradient(ellipse at 10% 10%, rgba(133, 4, 150, 0.1) 0%, transparent 40%),
+            radial-gradient(ellipse at 90% 90%, rgba(158, 40, 173, 0.08) 0%, transparent 40%),
+            radial-gradient(ellipse at 30% 60%, rgba(112, 3, 126, 0.06) 0%, transparent 40%),
+            radial-gradient(ellipse at 60% 20%, rgba(148, 25, 163, 0.05) 0%, transparent 40%),
+            radial-gradient(ellipse at 2% 80%, rgba(168, 60, 183, 0.04) 0%, transparent 40%);
+        animation: glowShiftMobile 10s ease-in-out infinite alternate;
+    }
+}
+
+/* Маленькие мобильные устройства (до 479px) */
+@media (max-width: 479px) {
+    body::before {
+        background: 
+            radial-gradient(ellipse at 5% 5%, rgba(133, 4, 150, 0.08) 0%, transparent 35%),
+            radial-gradient(ellipse at 95% 95%, rgba(158, 40, 173, 0.06) 0%, transparent 35%),
+            radial-gradient(ellipse at 25% 55%, rgba(112, 3, 126, 0.05) 0%, transparent 35%),
+            radial-gradient(ellipse at 55% 15%, rgba(148, 25, 163, 0.04) 0%, transparent 35%),
+            radial-gradient(ellipse at 1% 75%, rgba(168, 60, 183, 0.03) 0%, transparent 35%);
+        animation: glowShiftSmallMobile 8s ease-in-out infinite alternate;
+    }
+}
+
+/* Ландшафтная ориентация для мобильных */
+@media (max-width: 767px) and (orientation: landscape) {
+    body::before {
+        background: 
+            radial-gradient(ellipse at 15% 25%, rgba(133, 4, 150, 0.1) 0%, transparent 45%),
+            radial-gradient(ellipse at 85% 75%, rgba(158, 40, 173, 0.08) 0%, transparent 45%),
+            radial-gradient(ellipse at 40% 50%, rgba(112, 3, 126, 0.06) 0%, transparent 45%),
+            radial-gradient(ellipse at 70% 30%, rgba(148, 25, 163, 0.05) 0%, transparent 45%),
+            radial-gradient(ellipse at 5% 60%, rgba(168, 60, 183, 0.04) 0%, transparent 45%);
+        animation: glowShiftLandscape 9s ease-in-out infinite alternate;
+    }
+}
+
+/* Анимации для разных разрешений */
+@keyframes glowShiftTablet {
     0% {
-        opacity: 0.7;
-        filter: hue-rotate(0deg);
+        opacity: 0.6;
+        filter: hue-rotate(0deg) blur(0.5px);
     }
     100% {
-        opacity: 1;
-        filter: hue-rotate(10deg);
+        opacity: 0.9;
+        filter: hue-rotate(8deg) blur(0.8px);
+    }
+}
+
+@keyframes glowShiftMobile {
+    0% {
+        opacity: 0.5;
+        filter: hue-rotate(0deg) blur(0.8px);
+    }
+    100% {
+        opacity: 0.8;
+        filter: hue-rotate(5deg) blur(1px);
+    }
+}
+
+@keyframes glowShiftSmallMobile {
+    0% {
+        opacity: 0.4;
+        filter: hue-rotate(0deg) blur(1px);
+    }
+    100% {
+        opacity: 0.7;
+        filter: hue-rotate(3deg) blur(1.2px);
+    }
+}
+
+@keyframes glowShiftLandscape {
+    0% {
+        opacity: 0.5;
+        filter: hue-rotate(0deg) blur(0.6px);
+    }
+    100% {
+        opacity: 0.8;
+        filter: hue-rotate(6deg) blur(0.9px);
+    }
+}
+
+/* Высокопиксельные экраны (2x и более) */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    body::before {
+        filter: blur(0.3px);
+    }
+    
+    @media (max-width: 767px) {
+        body::before {
+            filter: blur(0.5px);
+        }
+    }
+}
+
+/* Темная тема (дополнительная адаптация) */
+@media (prefers-color-scheme: dark) {
+    body::before {
+        opacity: 0.8;
+    }
+    
+    @media (max-width: 767px) {
+        body::before {
+            opacity: 0.6;
+        }
+    }
+}
+
+/* Экономия заряда батареи */
+@media (prefers-reduced-motion: reduce) {
+    body::before {
+        animation: none;
+        opacity: 0.7;
     }
 }
 
@@ -67,15 +187,13 @@ body::before {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background-color: #000000;
 }
 
 .fix {
     width: 100%;
     position: fixed;
-    background-color: black;
-    box-shadow: 0px 1px 1px 1px rgb(255, 255, 255);
-    z-index: 1000;
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
 }
 
 .logo {
@@ -97,7 +215,7 @@ body::before {
     margin: 5px;
     background-color: rgb(255, 255, 255);
     color: #000000;
-    padding: 8px 15px;
+    padding: 8px 20px; /* Увеличил горизонтальные отступы для баланса */
     font-size: 10px;
     font-weight: 600;
     border: none;
@@ -106,107 +224,109 @@ body::before {
     transition-duration: 0.4s;
     text-align: center;
     display: inline-block;
+    min-width: 100px; /* Добавил минимальную ширину */
+    box-sizing: border-box; /* Чтобы padding не увеличивал размер */
+    width: 120px; /* фиксированная ширина */
+    padding: 10px 0; /* вертикальные отступы */
+    text-align: center;
 }
 
 .header nav a:hover {
     background: rgb(133, 4, 150);
-    box-shadow: 0px 1px 20px 3px rgb(133, 4, 150);
-    color: #ffffff;
-}
-
-/* Герой секция */
-.hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    min-height: 100vh;
-    background-color: transparent;
-    padding: 100px 20px 50px;
-    text-align: center;
-}
-
-.hero-text {
-    padding: 0;
-    margin-bottom: 30px;
-    width: 100%;
-    max-width: 800px;
-}
-
-.hero-text h1 {
-    font-family: 'Mont';
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: white;
-}
-
-.hero-text button {
-    background-color: rgb(255, 255, 255);
-    color: #000000;
-    padding: 12px 30px;
-    font-size: 18px;
-    font-weight: 600;
-    border: none;
-    border-radius: 32px;
-    cursor: pointer;
-    transition-duration: 0.4s;
-    margin: 0 auto;
-}
-
-.hero-text button:hover {
-   background: rgb(133, 4, 150);
     box-shadow: 0px 1px 10px 3px rgb(133, 4, 150);
     color: #ffffff;
 }
 
-/* Слайдер преимуществ */
-.benefits-slider {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    width: 100%;
-    max-width: 900px;
-    margin-top: 40px;
-    gap: 20px;
-    padding-bottom: 10px;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
+/* Герой секция */
+        .hero {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 100vh;
+            background-color: transparent;
+            padding: 100px 5% 50px;
+            width: 100%;
+        }
 
-.benefits-slider::-webkit-scrollbar {
-    display: none;
-}
+        .hero-text {
+            flex: 1;
+            max-width: 50%;
+            padding-right: 20px;
+        }
 
-.benefits-slider .slide {
-    flex: 0 0 auto;
-    width: 250px;
-    scroll-snap-align: start;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 30px 20px;
-    border-radius: 15px;
-    text-align: center;
-    backdrop-filter: blur(10px);
-}
+        .hero-text h1 {
+            font-family: 'Mont', Arial, sans-serif;
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: white;
+            line-height: 1.3;
+            text-align: center;
+        }
 
-.benefits-slider .slide .icon {
-    font-size: 40px;
-    margin-bottom: 15px;
-}
+        .hero-text a {
+            display: inline-block;
+            justify-content: center;
+            background-color: rgb(255, 255, 255);
+            color: #000000;
+            padding: 20px 30px;
+            font-size: 18px;
+            font-weight: 60;
+            border: none;
+            border-radius: 32px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+            text-decoration: none;
+        }
 
-.benefits-slider .slide h3 {
-    color: #fff;
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-family: 'Mont', sans-serif;
-}
+        .hero-text a:hover {
+            background: rgb(133, 4, 150);
+            box-shadow: 0px 1px 5px 3px rgb(133, 4, 150);
+            color: #ffffff;
+        }
 
-.benefits-slider .slide p {
-    color: #ccc;
-    font-size: 14px;
-    line-height: 1.5;
-    font-family: 'Mont', sans-serif;
-}
+
+
+        /* Адаптивность для планшетов */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 80px 5% 40px;
+            }
+            
+            .hero-text {
+                max-width: 100%;
+                width: 100%;
+                padding-right: 0;
+                margin-bottom: 40px;
+            }
+            
+
+            
+            .hero-text h1 {
+                font-size: 28px;
+            }
+        }
+
+        /* Адаптивность для мобильных */
+        @media (max-width: 480px) {
+            .hero {
+                padding: 60px 5% 30px;
+            }
+            
+            .hero-text h1 {
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+            
+            .hero-text a {
+                padding: 10px 25px;
+                font-size: 16px;
+            }
+        }
+
+
 
 /* Секция причин */
 .fitnes-section {
@@ -238,7 +358,6 @@ body::before {
 .fitnes-item:hover {
     transform: translateY(-5px);
     background: rgb(255, 255, 255);
-    box-shadow: 0px 1px 10px 3px rgb(133, 4, 150);
     color: #000;
 }
 
@@ -263,7 +382,6 @@ body::before {
 .membership-section {
     background: transparent;
     color: #333;
-    padding: 60px 20px;
 }
 
 .membership-section h1 {
@@ -287,6 +405,9 @@ body::before {
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .pass-card:hover {
@@ -322,10 +443,17 @@ body::before {
     vertical-align: super;
 }
 
+.pass-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0 20px 20px;
+}
+
 .pass-features {
-    padding: 20px;
     list-style: none;
-    min-height: 180px;
+    flex-grow: 1;
+    margin-bottom: 20px;
 }
 
 .pass-features li {
@@ -351,7 +479,6 @@ body::before {
 
 .but {
     display: block;
-    margin: 20px auto;
     background-color: rgb(0, 0, 0);
     color: #fff;
     padding: 12px 30px;
@@ -362,13 +489,14 @@ body::before {
     cursor: pointer;
     transition-duration: 0.4s;
     text-align: center;
-    width: 80%;
+    width: 100%;
     max-width: 200px;
+    margin: 0 auto;
+    margin-top: auto;
 }
 
 .but:hover {
     background: rgb(133, 4, 150);
-    box-shadow: 0px 1px 10px 3px rgb(133, 4, 150);
     color: #000;
 }
 
@@ -470,10 +598,13 @@ body::before {
 .net .section-title {
     text-align: center;
     font-family: 'Mont';
-    font-size: 32px;
+    font-size: 42px;
     color: white;
     margin-bottom: 40px;
+    margin-bottom: 3%;
 }
+
+
 
 /* Десктопная сетка */
 .desktop-grid {
@@ -529,9 +660,6 @@ body::before {
 
 .net .card:hover {
     transform: translateY(-5px);
-    background: #fff;
-    box-shadow: 0px 1px 10px 5px rgb(133, 4, 150);
-    color: #000;
 }
 
 .net .fot {
