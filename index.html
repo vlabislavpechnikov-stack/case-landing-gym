@@ -1,45 +1,324 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ФИТНЕС</title>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <link rel="stylesheet" href="/css/css.css">
 </head>
-
 
 <body id="begin">
     <div class="fix">
         <div class="header">
-            <div class="logo"><a href="#begin" style="text-decoration: none; color: rgb(255, 255, 255);">FITNES</a></div>
+            <div class="logo"><a href="#begin" style="text-decoration: none; color: white;">FITNESS</a></div>
             <div>
                 <nav>
-                    <a href="#Affiliates">Филиалы</a>
-                    <a href="#Membership">Абонементы</a>
                     <a href="#About">О нас</a>
+                    <a href="#Membership">Абонементы</a>
+                    <a href="#reasons">Приимущества</a>
                     <a href="#Trainers">Тренеры</a>
                 </nav>
             </div>
         </div>
     </div>
 
-<div class="hero" style="display: flex; justify-content: center;">
-    <div class="hero-text" >
-        <h1>Бесплатная пробная тренировка с тренером</h1>
-        <br>
-        <br>
-        <a href="#Probnik" style="text-decoration: none; display: flex;">ПОДРОБНЕЕ</a>
-    </div>
-</div>
 
-    <section class="fitnes-section" id="Affiliates">
+
+    <div id="About" class="about-section">
+        <div class="about-content">
+            <div class="text">
+                <h1 class="text1">FITNESS</h1>
+                <div class="text2">
+                    Фитнес-центр - это ведущий фитнес-центр, расположенный недалеко от станции метро "Грушевка",
+                    площадью более 1500 кв. м. в нем представлены самые современные тренажеры от ведущих брендов, таких
+                    как Hammer Strength, Life FITNESS и TechnoGym.
+                    <br><br>
+                    Благодаря доступным вариантам членства фитнес доступен каждому, кто хочет достичь своих целей в
+                    фитнесе, будь то наращивание силы, повышение выносливости или похудение.
+                    <br><br>
+                    Сертифицированные тренеры FITNESS предоставляют квалифицированные рекомендации и поддержку в
+                    разработке индивидуальных планов тренировок с учетом потребностей и целей каждого человека.
+                </div>
+            </div>
+            <div class="slider1">
+                <div class="slides1">
+                    <div class="slide1"><img src="img/phot.png" alt="Gym photo 1"></div>
+                    <div class="slide1"><img src="img/photo1.png" alt="Gym photo 2"></div>
+                    <div class="slide1"><img src="img/photo (1).png" alt="Gym photo 3"></div>
+                    <div class="slide1"><img src="img/photo (2).png" alt="Gym photo 4"></div>
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Бесплатная пробная тренировка с тренером</h1>
+            <br>
+            <br>
+            <a href="#Probnik">ПОДРОБНЕЕ</a>
+        </div>
+    </div>
+
+
+
+    <div class="membership-section" id="Probnik">
+        <h1 id="Membership">Абонементы в тренажерный зал</h1>
+        <div class="passes-container">
+            <div class="pass-card">
+                <div class="pass-header">
+                    <div class="pass-name">Абонемент 'Пробный'</div>
+                    <div class="pass-price">0</div>
+                </div>
+                <div class="pass-content">
+                    <ul class="pass-features">
+                        <li>Доступ в зал с 8:00 до 14:00</li>
+                        <li>Дежурный тренер познакомит с залом</li>
+                    </ul>
+                    <a href="buy.html" class="but">Купить</a>
+                </div>
+            </div>
+
+            <div class="pass-card">
+                <div class="pass-header">
+                    <div class="pass-name">Абонемент 'Легкий старт'</div>
+                    <div class="pass-price">119</div>
+                </div>
+                <div class="pass-content">
+                    <ul class="pass-features">
+                        <li>Посещение без ограничений 24/7</li>
+                        <li>Индивидуальная программа тренировок</li>
+                        <li>Доступ к приложению VITAMINKA</li>
+                        <li>Поддержка тренера</li>
+                    </ul>
+                    <a href="buy.html" class="but">Купить</a>
+                </div>
+            </div>
+
+            <div class="pass-card">
+                <div class="pass-header">
+                    <div class="pass-name">Абонемент 'Свободное время'</div>
+                    <div class="pass-price">49</div>
+                </div>
+                <div class="pass-content">
+                    <ul class="pass-features">
+                        <li>Время входа в зал с 8:00 до 20:00</li>
+                        <li>Без заморозки абонемента</li>
+                        <li>Дежурный тренер познакомит с залом</li>
+                    </ul>
+                    <a href="buy.html" class="but">Купить</a>
+                </div>
+            </div>
+
+            <div class="pass-card">
+                <div class="pass-header">
+                    <div class="pass-name">Абонемент '1 месяц 24/7'</div>
+                    <div class="pass-price">85</div>
+                </div>
+                <div class="pass-content">
+                    <ul class="pass-features">
+                        <li>Посещение без ограничений 24/7</li>
+                        <li>Дежурный тренер познакомит с залом</li>
+                    </ul>
+                    <a href="buy.html" class="but">Купить</a>
+                </div>
+            </div>
+
+            <div class="pass-card">
+                <div class="pass-header">
+                    <div class="pass-name">Абонемент 'В форме (Лайт)'</div>
+                    <div class="pass-price">165</div>
+                </div>
+                <div class="pass-content">
+                    <ul class="pass-features">
+                        <li>Тренировки в мини-группе c 14:00 до 20:00</li>
+                        <li>Без заморозки абонемента</li>
+                        <li>Занятия с тренером в мини-группе 1 раз в неделю</li>
+                        <li>Поддержка тренера</li>
+                    </ul>
+                    <a href="buy.html" class="but">Купить</a>
+                </div>
+            </div>
+
+            <div class="pass-card">
+                <div class="pass-header">
+                    <div class="pass-name">Абонемент 'В форме (Хард)'</div>
+                    <div class="pass-price">195</div>
+                </div>
+                <div class="pass-content">
+                    <ul class="pass-features">
+                        <li>Тренировки в мини-группе с 12:00 до 20:00</li>
+                        <li>Без заморозки абонемента</li>
+                        <li>Занятия с тренером в группе 3 раза в неделю</li>
+                        <li>Поддержка тренеров разных разрядов</li>
+                    </ul>
+                    <a href="buy.html" class="but">Купить</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div id="Trainers" class="net">
+        <div class="container">
+            <h2 class="section-title">Наша команда</h2>
+
+            <div class="cards-grid desktop-grid">
+                <div class="card">
+                    <img class="fot" src="img/photo.png" alt="Светлана Иванова">
+                    <div class="name">Светлана Иванова</div>
+                    <div class="position">Сотрудник</div>
+                </div>
+
+                <div class="card">
+                    <img class="fot" src="img/0abe6d9b9f4bcb47836f6ed0a0e1af2796eec5d4.png" alt="Ольга Петрова">
+                    <div class="name">Ольга Петрова</div>
+                    <div class="position">Сотрудник</div>
+                </div>
+
+                <div class="card">
+                    <img class="fot" src="img/8ea42ea7fd07e04939935a4d290f867aa948903e.png" alt="Дмитрий Сидоров">
+                    <div class="name">Дмитрий Сидоров</div>
+                    <div class="position">Сотрудник</div>
+                </div>
+
+                <div class="card">
+                    <img class="fot" src="img/17c3b2f32eac399dc0a2e5b82ec7fd0b2496e31d.png" alt="Елена Козлова">
+                    <div class="name">Елена Козлова</div>
+                    <div class="position">Сотрудник</div>
+                </div>
+            </div>
+
+            <div class="slider-container mobile-slider team-slider-1">
+                <div class="slider-wrapper">
+                    <div class="slides team-slides-1">
+                        <div class="slide team-slide-1">
+                            <div class="card">
+                                <img class="fot" src="img/photo.png" alt="Светлана Иванова">
+                                <div class="name">Светлана Иванова</div>
+                                <div class="position">Сотрудник</div>
+                            </div>
+                        </div>
+                        <div class="slide team-slide-1">
+                            <div class="card">
+                                <img class="fot" src="img/0abe6d9b9f4bcb47836f6ed0a0e1af2796eec5d4.png"
+                                    alt="Ольга Петрова">
+                                <div class="name">Ольга Петрова</div>
+                                <div class="position">Сотрудник</div>
+                            </div>
+                        </div>
+                        <div class="slide team-slide-1">
+                            <div class="card">
+                                <img class="fot" src="img/8ea42ea7fd07e04939935a4d290f867aa948903e.png"
+                                    alt="Дмитрий Сидоров">
+                                <div class="name">Дмитрий Сидоров</div>
+                                <div class="position">Сотрудник</div>
+                            </div>
+                        </div>
+                        <div class="slide team-slide-1">
+                            <div class="card">
+                                <img class="fot" src="img/17c3b2f32eac399dc0a2e5b82ec7fd0b2496e31d.png"
+                                    alt="Елена Козлова">
+                                <div class="name">Елена Козлова</div>
+                                <div class="position">Сотрудник</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-prev team-prev-1">&#10094;</button>
+                <button class="slider-next team-next-1">&#10095;</button>
+                <div class="slider-dots team-dots-1"></div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="cards-grid desktop-grid">
+                <div class="card">
+                    <img class="fot" src="img/4b302cebcaa0f2d07a8813215206f279623c6351.png" alt="Алексей Волков">
+                    <div class="name">Алексей Волков</div>
+                    <div class="position">Сотрудник</div>
+                </div>
+
+                <div class="card">
+                    <img class="fot" src="img/8bdf0f56fa8df2284311fb744bc9b4dfe1cb2da3.png" alt="Сергей Смирнов">
+                    <div class="name">Сергей Смирнов</div>
+                    <div class="position">Сотрудник</div>
+                </div>
+
+                <div class="card">
+                    <img class="fot" src="img/312d9f277b7ec22165ca7b0b73e81fd558a15f72.png" alt="Андрей Попов">
+                    <div class="name">Андрей Попов</div>
+                    <div class="position">Сотрудник</div>
+                </div>
+
+                <div class="card">
+                    <img class="fot" src="img/752b06a4e640f29c327a05de0d0b0a2cceebeaba.png" alt="Наталья Морозова">
+                    <div class="name">Наталья Морозова</div>
+                    <div class="position">Сотрудник</div>
+                </div>
+            </div>
+
+            <div class="slider-container mobile-slider team-slider-2">
+                <div class="slider-wrapper">
+                    <div class="slides team-slides-2">
+                        <div class="slide team-slide-2">
+                            <div class="card">
+                                <img class="fot" src="img/4b302cebcaa0f2d07a8813215206f279623c6351.png"
+                                    alt="Алексей Волков">
+                                <div class="name">Алексей Волков</div>
+                                <div class="position">Сотрудник</div>
+                            </div>
+                        </div>
+                        <div class="slide team-slide-2">
+                            <div class="card">
+                                <img class="fot" src="img/8bdf0f56fa8df2284311fb744bc9b4dfe1cb2da3.png"
+                                    alt="Сергей Смирнов">
+                                <div class="name">Сергей Смирнов</div>
+                                <div class="position">Сотрудник</div>
+                            </div>
+                        </div>
+                        <div class="slide team-slide-2">
+                            <div class="card">
+                                <img class="fot" src="img/312d9f277b7ec22165ca7b0b73e81fd558a15f72.png"
+                                    alt="Андрей Попов">
+                                <div class="name">Андрей Попов</div>
+                                <div class="position">Сотрудник</div>
+                            </div>
+                        </div>
+                        <div class="slide team-slide-2">
+                            <div class="card">
+                                <img class="fot" src="img/752b06a4e640f29c327a05de0d0b0a2cceebeaba.png"
+                                    alt="Наталья Морозова">
+                                <div class="name">Наталья Морозова</div>
+                                <div class="position">Сотрудник</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-prev team-prev-2">&#10094;</button>
+                <button class="slider-next team-next-2">&#10095;</button>
+                <div class="slider-dots team-dots-2"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="fitnes-section" id="reasons">
         <div class="container container-custom">
             <h2 class="text-center mb-5">Причины присоединиться</h2>
             <div class="row justify-content-center">
-                <!-- Элементы навыков с новыми надписями -->
                 <div class="col-lg-3 col-md-4 col-6 mb-4">
                     <div class="fitnes-item">
                         <div class="fitnes-icon">
@@ -51,7 +330,7 @@
                 <div class="col-lg-3 col-md-4 col-6 mb-4">
                     <div class="fitnes-item">
                         <div class="fitnes-icon">
-                           <img src="img/icon_time (1).png" alt="">
+                            <img src="img/icon_time (1).png" alt="">
                         </div>
                         <h5>Открыто с 10:00 до 23:00</h5>
                     </div>
@@ -77,470 +356,71 @@
     </section>
 
 
+    <footer class="fitness-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 class="footer-logo">FITNESS</h3>
+                <p class="footer-description">Создавайте силу и уверенность в нашем тренажерном зале с современным
+                    оборудованием, индивидуальными тренировками и мотивирующим сообществом.</p>
+            </div>
 
+            <div class="footer-section">
+                <h4 class="footer-title">Адрес</h4>
+                <p class="footer-text">Россия<br>г. Москва<br>Ул. Пушкина <br> Дом. Колотушкина</p>
+            </div>
 
+            <div class="footer-section">
+                <h4 class="footer-title">Контакты</h4>
+                <p class="footer-text">
+                    <a href="tel:+79042988819" class="footer-link">+7-904-298-88-19</a><br>
+                    <a href="mailto:fitness@gmail.com" class="footer-link">fitness@gmail.com</a>
+                </p>
+            </div>
 
+            <div class="footer-section">
+                <h4 class="footer-title">Мы в соцсетях</h4>
+                <div class="social-container">
+                    <a class="social-link instagram" href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 16 16" class="social-icon">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                            </path>
+                        </svg>
+                    </a>
 
+                    <a class="social-link twitter" href="#" aria-label="Twitter">
+                        <svg viewBox="0 0 16 16" class="social-icon">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z">
+                            </path>
+                        </svg>
+                    </a>
 
-    <div class="membership-section" id="Probnik" style="margin-top: 5%;">
-            <h1 id="Membership" style="font-size: 42px; margin-bottom: 3%;">Абонементы в тренажерный зал</h1>
-            <div class="passes-container">
-        <!-- Абонемент 'Пробный' -->
-        <div class="pass-card" >
-            <div class="pass-header">
-                <div class="pass-name">Абонемент 'Пробный'</div>
-                <div class="pass-price">0</div>
-            </div>
-            <div class="pass-content">
-                <ul class="pass-features">
-                    <li>Доступ в зал с 8:00 до 14:00</li>
-                    <li>Дежурный тренер познакомит с залом</li>
-                </ul>
-                <button class="but"><a href="buy.html" style="text-decoration: none; color: rgb(255, 255, 255);">Купить</a></button>
-            </div>
-        </div>
-        
-        <!-- Абонемент 'Легкий старт' -->
-        <div class="pass-card">
-            <div class="pass-header">
-                <div class="pass-name">Абонемент 'Легкий старт'</div>
-                <div class="pass-price">119</div>
-            </div>
-            <div class="pass-content">
-                <ul class="pass-features">
-                    <li>Посещение без ограничений 24/7</li>
-                    <li>Индивидуальная программа тренировок</li>
-                    <li>Доступ к приложению VITAMINKA</li>
-                    <li>Поддержка тренера</li>
-                </ul>
-                <button class="but"><a href="buy.html" style="text-decoration: none; color: rgb(255, 255, 255);">Купить</a></button>
-            </div>
-        </div>
-        
-        <!-- Абонемент 'Свободное время' -->
-        <div class="pass-card">
-            <div class="pass-header">
-                <div class="pass-name">Абонемент 'Свободное время'</div>
-                <div class="pass-price">49</div>
-            </div>
-            <div class="pass-content">
-                <ul class="pass-features">
-                    <li>Время входа в зал с 8:00 до 20:00</li>
-                    <li>Без заморозки абонемента</li>
-                    <li>Дежурный тренер познакомит с залом</li>
-                </ul>
-                <button class="but"><a href="buy.html" style="text-decoration: none; color: rgb(255, 255, 255);">Купить</a></button>
-            </div>
-        </div>
-        
-        <!-- Абонемент '1 месяц 24/7' -->
-        <div class="pass-card">
-            <div class="pass-header">
-                <div class="pass-name">Абонемент '1 месяц 24/7'</div>
-                <div class="pass-price">85</div>
-            </div>
-            <div class="pass-content">
-                <ul class="pass-features">
-                    <li>Посещение без ограничений 24/7</li>
-                    <li>Дежурный тренер познакомит с залом</li>
-                </ul>
-                <button class="but"><a href="buy.html" style="text-decoration: none; color: rgb(255, 255, 255);">Купить</a></button>
-            </div>
-        </div>
-        
-        <!-- Абонемент 'В форме (AM)' -->
-        <div class="pass-card">
-            <div class="pass-header">
-                <div class="pass-name">Абонемент 'В форме (Лайт)'</div>
-                <div class="pass-price">165</div>
-            </div>
-            <div class="pass-content">
-                <ul class="pass-features">
-                    <li>Тренировки в мини-группе c 14:00 до 20:00</li>
-                    <li>Без заморозки абонемента</li>
-                    <li>Занятия с тренером в мини-группе 1 раз в неделю</li>
-                    <li>Поддержка тренера</li>
-                </ul>
-                <button class="but"><a href="buy.html" style="text-decoration: none; color: rgb(255, 255, 255);">Купить</a></button>
-            </div>
-        </div>
-        
-        <!-- Абонемент 'В форме (PM)' -->
-        <div class="pass-card">
-            <div class="pass-header">
-                <div class="pass-name">Абонемент 'В форме (Хард)'</div>
-                <div class="pass-price">195</div>
-            </div>
-            <div class="pass-content">
-                <ul class="pass-features">
-                    <li>Тренировки в мини-группе с 12:00 до 20:00</li>
-                    <li>Без заморозки абонемента</li>
-                    <li>Занятия с тренером в группе 3 раза в неделю</li>
-                    <li>Поддержка тренеров разных разрядов</li>
-                </ul>
-                <button class="but"><a href="buy.html" style="text-decoration: none; color: rgb(255, 255, 255);">Купить</a></button>
-            </div>
-        </div>
-    </div>
+                    <a class="social-link linkedin" href="#" aria-label="LinkedIn">
+                        <svg viewBox="0 0 448 512" class="social-icon">
+                            <path
+                                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                            </path>
+                        </svg>
+                    </a>
 
-    <script>
-        // Слайдер "О нас"
-        document.addEventListener('DOMContentLoaded', function() {
-            const aboutSlides = document.querySelector('.about-slides');
-            const aboutSlideCount = document.querySelectorAll('.about-slide').length;
-            const aboutPrevButton = document.querySelector('.about-prev');
-            const aboutNextButton = document.querySelector('.about-next');
-            let aboutCurrentIndex = 0;
-
-            function goToAboutSlide(index) {
-                if (index < 0) {
-                    index = aboutSlideCount - 1;
-                } else if (index >= aboutSlideCount) {
-                    index = 0;
-                }
-                aboutCurrentIndex = index;
-                aboutSlides.style.transform = `translateX(${-index * 100}%)`;
-            }
-
-            aboutPrevButton.addEventListener('click', () => {
-                goToAboutSlide(aboutCurrentIndex - 1);
-            });
-
-            aboutNextButton.addEventListener('click', () => {
-                goToAboutSlide(aboutCurrentIndex + 1);
-            });
-
-            // Автопрокрутка слайдера
-            let aboutAutoplay = setInterval(() => {
-                goToAboutSlide(aboutCurrentIndex + 1);
-            }, 5000);
-
-            // Останавливаем автопрокрутку при наведении
-            const aboutSlider = document.querySelector('.about-slider');
-            aboutSlider.addEventListener('mouseenter', () => {
-                clearInterval(aboutAutoplay);
-            });
-
-            aboutSlider.addEventListener('mouseleave', () => {
-                aboutAutoplay = setInterval(() => {
-                    goToAboutSlide(aboutCurrentIndex + 1);
-                }, 5000);
-            });
-
-            // Плавная прокрутка для якорных ссылок
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    if (targetId === '#') return;
-                    
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 80,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-        });
-    </script>
-
-<div id="Trainers" class="net" style="margin-top: 5%; margin-bottom: 5%;" >
-    <div class="container">
-        <h2 class="section-title">Наша команда</h2>
-        
-        <!-- Desktop Grid (видно только на больших экранах) -->
-        <div class="cards-grid desktop-grid">
-            <!-- Первая группа -->
-            <div class="card">
-                <img class="fot" src="img/photo.png" alt="Виктория Шурпик">
-                <div class="name">Виктория Шурпик</div>
-                <div class="position">Сотрудник</div>
-            </div>
-            
-            <div class="card">
-                <img class="fot" src="img/0abe6d9b9f4bcb47836f6ed0a0e1af2796eec5d4.png" alt="Елизавета Лавриненко">
-                <div class="name">Елизавета Лавриненко</div>
-                <div class="position">Сотрудник</div>
-            </div>
-            
-            <div class="card">
-                <img class="fot" src="img/8ea42ea7fd07e04939935a4d290f867aa948903e.png" alt="Иван Гладких">
-                <div class="name">Иван Гладких</div>
-                <div class="position">Сотрудник</div>
-            </div>
-            
-            <div class="card">
-                <img class="fot" src="img/17c3b2f32eac399dc0a2e5b82ec7fd0b2496e31d.png" alt="Людмила Сабило">
-                <div class="name">Людмила Сабило</div>
-                <div class="position">Сотрудник</div>
-            </div>
-        </div>
-        
-        <!-- Mobile Slider (видно только на мобильных и планшетах) -->
-        <div class="slider-container mobile-slider team-slider-1">
-            <div class="slider-wrapper">
-                <div class="slides team-slides-1">
-                    <div class="slide team-slide-1">
-                        <div class="card">
-                            <img class="fot" src="img/photo.png" alt="Виктория Шурпик">
-                            <div class="name">Виктория Шурпик</div>
-                            <div class="position">Сотрудник</div>
-                        </div>
-                    </div>
-                    <div class="slide team-slide-1">
-                        <div class="card">
-                            <img class="fot" src="img/0abe6d9b9f4bcb47836f6ed0a0e1af2796eec5d4.png" alt="Елизавета Лавриненко">
-                            <div class="name">Елизавета Лавриненко</div>
-                            <div class="position">Сотрудник</div>
-                        </div>
-                    </div>
-                    <div class="slide team-slide-1">
-                        <div class="card">
-                            <img class="fot" src="img/8ea42ea7fd07e04939935a4d290f867aa948903e.png" alt="Иван Гладких">
-                            <div class="name">Иван Гладких</div>
-                            <div class="position">Сотрудник</div>
-                        </div>
-                    </div>
-                    <div class="slide team-slide-1">
-                        <div class="card">
-                            <img class="fot" src="img/17c3b2f32eac399dc0a2e5b82ec7fd0b2496e31d.png" alt="Людмила Сабило">
-                            <div class="name">Людмила Сабило</div>
-                            <div class="position">Сотрудник</div>
-                        </div>
-                    </div>
+                    <a class="social-link whatsapp" href="#" aria-label="WhatsApp">
+                        <svg viewBox="0 0 16 16" class="social-icon">
+                            <path
+                                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z">
+                            </path>
+                        </svg>
+                    </a>
                 </div>
             </div>
-            <button class="slider-prev team-prev-1">&#10094;</button>
-            <button class="slider-next team-next-1">&#10095;</button>
-            <div class="slider-dots team-dots-1"></div>
         </div>
 
-        <div class="divider"></div>
-        
-        <!-- Вторая группа карточек для десктопа -->
-        <div class="cards-grid desktop-grid">
-            <div class="card">
-                <img class="fot" src="img/4b302cebcaa0f2d07a8813215206f279623c6351.png" alt="Евгений Гурков">
-                <div class="name">Евгений Гурков</div>
-                <div class="position">Сотрудник</div>
-            </div>
-            
-            <div class="card">
-                <img class="fot" src="img/8bdf0f56fa8df2284311fb744bc9b4dfe1cb2da3.png" alt="Анатолий Притыцкий">
-                <div class="name">Анатолий Притыцкий</div>
-                <div class="position">Сотрудник</div>
-            </div>
-            
-            <div class="card">
-                <img class="fot" src="img/312d9f277b7ec22165ca7b0b73e81fd558a15f72.png" alt="Виктор Лудкович">
-                <div class="name">Виктор Лудкович</div>
-                <div class="position">Сотрудник</div>
-            </div>
-            
-            <div class="card">
-                <img class="fot" src="img/752b06a4e640f29c327a05de0d0b0a2cceebeaba.png" alt="Мария Масяк">
-                <div class="name">Мария Масяк</div>
-                <div class="position">Сотрудник</div>
-            </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 FITNESS. Все права защищены.</p>
         </div>
-        
-        <!-- Второй слайдер для мобильных -->
-        <div class="slider-container mobile-slider team-slider-2">
-            <div class="slider-wrapper">
-                <div class="slides team-slides-2">
-                    <div class="slide team-slide-2">
-                        <div class="card">
-                            <img class="fot" src="img/4b302cebcaa0f2d07a8813215206f279623c6351.png" alt="Евгений Гурков">
-                            <div class="name">Евгений Гурков</div>
-                            <div class="position">Сотрудник</div>
-                        </div>
-                    </div>
-                    <div class="slide team-slide-2">
-                        <div class="card">
-                            <img class="fot" src="img/8bdf0f56fa8df2284311fb744bc9b4dfe1cb2da3.png" alt="Анатолий Притыцкий">
-                            <div class="name">Анатолий Притыцкий</div>
-                            <div class="position">Сотрудник</div>
-                        </div>
-                    </div>
-                    <div class="slide team-slide-2">
-                        <div class="card">
-                            <img class="fot" src="img/312d9f277b7ec22165ca7b0b73e81fd558a15f72.png" alt="Виктор Лудкович">
-                            <div class="name">Виктор Лудкович</div>
-                            <div class="position">Сотрудник</div>
-                        </div>
-                    </div>
-                    <div class="slide team-slide-2">
-                        <div class="card">
-                            <img class="fot" src="img/752b06a4e640f29c327a05de0d0b0a2cceebeaba.png" alt="Мария Масяк">
-                            <div class="name">Мария Масяк</div>
-                            <div class="position">Сотрудник</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="slider-prev team-prev-2">&#10094;</button>
-            <button class="slider-next team-next-2">&#10095;</button>
-            <div class="slider-dots team-dots-2"></div>
-        </div>
-    </div>
-</div>
+    </footer>
 
-<script>
-// Инициализация слайдеров команды
-document.addEventListener('DOMContentLoaded', function() {
-    // Инициализация первого слайдера команды
-    initTeamSlider('.team-slider-1', '.team-slides-1', '.team-slide-1', '.team-prev-1', '.team-next-1', '.team-dots-1');
-    
-    // Инициализация второго слайдера команды
-    initTeamSlider('.team-slider-2', '.team-slides-2', '.team-slide-2', '.team-prev-2', '.team-next-2', '.team-dots-2');
-    
-    function initTeamSlider(sliderSelector, slidesSelector, slideSelector, prevBtnSelector, nextBtnSelector, dotsSelector) {
-        const slider = document.querySelector(sliderSelector);
-        if (!slider) return;
-        
-        const slides = slider.querySelector(slidesSelector);
-        const slideCount = slider.querySelectorAll(slideSelector).length;
-        const prevBtn = slider.querySelector(prevBtnSelector);
-        const nextBtn = slider.querySelector(nextBtnSelector);
-        const dotsContainer = slider.querySelector(dotsSelector);
-        
-        let currentIndex = 0;
-        
-        // Создаем точки навигации
-        for (let i = 0; i < slideCount; i++) {
-            const dot = document.createElement('div');
-            dot.classList.add('slider-dot');
-            if (i === 0) dot.classList.add('active');
-            dot.addEventListener('click', () => goToSlide(i));
-            dotsContainer.appendChild(dot);
-        }
-        
-        const dots = dotsContainer.querySelectorAll('.slider-dot');
-        
-        function goToSlide(index) {
-            if (index < 0) {
-                index = slideCount - 1;
-            } else if (index >= slideCount) {
-                index = 0;
-            }
-            
-            currentIndex = index;
-            slides.style.transform = `translateX(-${index * 100}%)`;
-            
-            // Обновляем активную точку
-            dots.forEach((dot, i) => {
-                dot.classList.toggle('active', i === currentIndex);
-            });
-        }
-        
-        prevBtn.addEventListener('click', () => {
-            goToSlide(currentIndex - 1);
-        });
-        
-        nextBtn.addEventListener('click', () => {
-            goToSlide(currentIndex + 1);
-        });
-        
-        // Автопрокрутка (опционально)
-        let autoplay = setInterval(() => {
-            goToSlide(currentIndex + 1);
-        }, 5000);
-        
-        // Останавливаем автопрокрутку при наведении
-        slider.addEventListener('mouseenter', () => {
-            clearInterval(autoplay);
-        });
-        
-        slider.addEventListener('mouseleave', () => {
-            autoplay = setInterval(() => {
-                goToSlide(currentIndex + 1);
-            }, 5000);
-        });
-        
-        // Свайп для мобильных устройств
-        let startX = 0;
-        let endX = 0;
-        
-        slider.addEventListener('touchstart', (e) => {
-            startX = e.touches[0].clientX;
-        });
-        
-        slider.addEventListener('touchend', (e) => {
-            endX = e.changedTouches[0].clientX;
-            handleSwipe();
-        });
-        
-        function handleSwipe() {
-            const diff = startX - endX;
-            if (Math.abs(diff) > 50) { // минимальная дистанция свайпа
-                if (diff > 0) {
-                    goToSlide(currentIndex + 1); // свайп влево
-                } else {
-                    goToSlide(currentIndex - 1); // свайп вправо
-                }
-            }
-        }
-    }
-});
-</script>
-
-<footer class="fitness-footer">
-    <div class="footer-container">
-        <div class="footer-section">
-            <h3 class="footer-logo">ФИТНЕС</h3>
-            <p class="footer-description">Создавайте силу и уверенность в нашем тренажерном зале с современным оборудованием, индивидуальными тренировками и мотивирующим сообществом.</p>
-        </div>
-        
-        <div class="footer-section">
-            <h4 class="footer-title">Адрес</h4>
-            <p class="footer-text">Республика Беларусь<br>
-            г. Минск<br>
-            Дзержинский проспект 15</p>
-        </div>
-        
-        <div class="footer-section">
-            <h4 class="footer-title">Контакты</h4>
-            <p class="footer-text">
-                <a href="tel:+79042988819" class="footer-link">+7-904-298-88-19</a><br>
-                <a href="mailto:fitness@gmail.com" class="footer-link">fitness@gmail.com</a>
-            </p>
-        </div>
-        
-        <div class="footer-section">
-            <h4 class="footer-title">Мы в соцсетях</h4>
-            <div class="social-container">
-                <a class="social-link instagram" href="#" aria-label="Instagram">
-                    <svg viewBox="0 0 16 16" class="social-icon">
-                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
-                    </svg>
-                </a>
-
-                <a class="social-link twitter" href="#" aria-label="Twitter">
-                    <svg viewBox="0 0 16 16" class="social-icon">
-                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path>
-                    </svg>
-                </a>
-
-                <a class="social-link linkedin" href="#" aria-label="LinkedIn">
-                    <svg viewBox="0 0 448 512" class="social-icon">
-                        <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
-                    </svg>
-                </a>
-
-                <a class="social-link whatsapp" href="#" aria-label="WhatsApp">
-                    <svg viewBox="0 0 16 16" class="social-icon">
-                        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    <div class="footer-bottom">
-        <p>&copy; 2023 ФИТНЕС. Все права защищены.</p>
-    </div>
-</footer>
+    <script src="JS/Js.Js"></script>
 </body>
+
 </html>
